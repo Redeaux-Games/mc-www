@@ -37,7 +37,7 @@
         h5 {
               max-width: 100%;
               text-align: center;
-              font-size: 1.75vw;
+              font-size: 1.90vw;
               transform: scale(0.94);
               animation: scale 10s forwards cubic-bezier(0.5, 1, 0.89, 1);
             }
@@ -135,7 +135,7 @@
             h6 {
               max-width: 100%;
               text-align: center;
-              font-size: 1.4vw;
+              font-size: 1.80vw;
               transform: scale(0.94);
             }
   
