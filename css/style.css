@@ -20,6 +20,7 @@
           background-size: 200% auto;
           color: #fff;
           background-clip: text;
+          position: relative;
           text-fill-color: transparent;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -278,13 +279,13 @@
             }
 
             .copyright {
-              font-family: 'Courier New', Courier, monospace;
+              font-family: 'Courier New', Courier, monospace !important;
             }
 
             .atext {
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
             }
 
             .abuttons {
-              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
             }
