@@ -27,6 +27,7 @@
           animation: textclip 2s linear infinite;
           display: inline-block;
           font-size: 9.20vw;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
   
         @keyframes textclip {
@@ -129,7 +130,6 @@
             @keyframes fade-in {
               100% {
                 opacity: 1;
-                filter: blur(0);
               }
             }
   
@@ -162,7 +162,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 animation: rainbow 4s ease infinite;
-                filter: saturate(400);
+                filter: saturate(400) !important;
             }
   
             @keyframes rainbow2 { 
@@ -193,7 +193,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 animation: rainbow 7s ease infinite;
-                filter: contrast(100);
+                filter: contrast(100) !important;
             }
   
             @keyframes rainbow4 { 
@@ -224,7 +224,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 animation: rainbow 20s ease infinite;
-                filter: saturate(200);
+                filter: saturate(200) !important;
             }
   
             @keyframes rainbowz { 
@@ -275,7 +275,7 @@
 
             .social {
               background-color: #00000000;
-              filter: contrast(50);
+              filter: contrast(50) !important;
             }
 
             .copyright {
