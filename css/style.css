@@ -4207,7 +4207,8 @@ a.logo:hover{
     width: 50px;
     height: 50px;
     position: relative;
-    margin: 24px;
+    line-height: 45px !important;
+    margin: 22px !important;
     text-align: center;
     display: inline-block;    
     -webkit-transition: all 1s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
