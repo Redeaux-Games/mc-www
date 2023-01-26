@@ -7031,6 +7031,5 @@ section:hover .small-item-carousel .owl-next{
   }
 
 .crt-widget.crt-widget-branded .crt-logo {
-    color: #09090900;
-    text-decoration: none;
+    color: #09090900 !important;
 }
