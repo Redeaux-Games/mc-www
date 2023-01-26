@@ -7029,3 +7029,8 @@ section:hover .small-item-carousel .owl-next{
     border-radius: 20px;
     border: 2px outset #ff7b00;
   }
+
+.crt-widget.crt-widget-branded .crt-logo {
+    color: #09090900;
+    text-decoration: none;
+}
