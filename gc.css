@@ -1,11 +1,11 @@
  main .pagination-loader-container { 
    background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg"); 
  } 
- 
-.gsc-main {
+
+.w-full {
     width: 100%;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .text-sm {
