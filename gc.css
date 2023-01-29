@@ -40,7 +40,7 @@ main {
    --color-btn-active-border: #636e7b; 
    --color-btn-selected-bg: #2d333b; 
    --color-btn-primary-text: #fff; 
-   --color-btn-primary-bg: #347d39; 
+   --color-btn-primary-bg: #1d1d1d; 
    --color-btn-primary-border: rgb(205 217 229 / 10%); 
    --color-btn-primary-shadow: 0 0 transparent; 
    --color-btn-primary-inset-shadow: 0 0 transparent; 
@@ -114,7 +114,7 @@ main {
  } 
   
  .gsc-homepage-bg { 
-   background-color: #15202b; 
+   background-color: #1c1c1c; 
  } 
   
  main .gsc-loading-image { 
