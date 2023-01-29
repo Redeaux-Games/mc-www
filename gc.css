@@ -87,29 +87,77 @@ main {
  } 
   
  /*! Custom CSS */ 
+.gsc-main {
+    width: 100%;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
 .em-color-text-secondary.text-sm {
    display: none;
 }
+
+.gsc-reactions {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0rem;
+    color: #999999;
+}
+
  .gsc-reactions-count { 
    display: none; 
  } 
   
  .gsc-timeline { 
    flex-direction: column-reverse; 
- } 
+ }
   
- .gsc-header { 
-   padding-bottom: 1rem; 
- } 
-  
+.gsc-header {
+   padding-bottom: 0rem;
+   align-items: center;
+   display: flex;
+   flex: 1 1 auto;
+   color: #999999;
+}
+
+.gsc-comments-count, .gsc-comments-count-separator {
+    -webkit-margin-end: 0.5rem;
+    font-weight: 200;
+    margin-inline-end: 0.5rem;
+    color: slategrey;
+}
+
+#__next .mb-4 {
+    margin-bottom: 0rem;
+}
+
  .gsc-comments > .gsc-header { 
    order: 1; 
  } 
+
+.gsc-comment-box:not(.gsc-comment-box-is-reply) {
+    border-radius: 0.25rem;
+    border-width: 1px;
+    margin-top: 0rem;
+    background: #2a2a2a;
+}
   
  .gsc-comments > .gsc-comment-box { 
    order: 2; 
-   margin-bottom: 1rem; 
+   margin-bottom: 0rem; 
  } 
+
+.gsc-comment-box-tabs {
+    align-items: center;
+    border-bottom-width: 1px;
+    border-start-end-radius: 5.25rem;
+    border-start-start-radius: 5.25rem;
+    display: flex;
+    justify-content: space-between;
+    color: dimgrey;
+}
   
  .gsc-comments > .gsc-timeline { 
    order: 3; 
@@ -120,5 +168,5 @@ main {
  } 
   
  main .gsc-loading-image { 
-   background-image: url("https://github.githubassets.com/images/mona-loading-dimmed.gif"); 
+   background-image: url("https://raw.githubusercontent.com/Redeaux-Games/mc-www/main/images/loader1.gif"); 
  }
