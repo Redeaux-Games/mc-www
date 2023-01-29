@@ -102,7 +102,6 @@ main .pagination-loader-container {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0rem;
-    color: #999999;
 }
 
  .gsc-reactions-count { 
@@ -118,14 +117,12 @@ main .pagination-loader-container {
    align-items: center;
    display: flex;
    flex: 1 1 auto;
-   color: #999999;
 }
 
 .gsc-comments-count, .gsc-comments-count-separator {
     -webkit-margin-end: 0.5rem;
     font-weight: 200;
     margin-inline-end: 0.5rem;
-    color: slategrey;
 }
 
 #__next .mb-4 {
@@ -140,7 +137,6 @@ main .pagination-loader-container {
     border-radius: 0.25rem;
     border-width: 1px;
     margin-top: 0rem;
-    background: #2a2a2a;
 }
   
 .gsc-comments > .gsc-comment-box { 
@@ -155,15 +151,10 @@ main .pagination-loader-container {
     border-start-start-radius: 5.25rem;
     display: flex;
     justify-content: space-between;
-    color: dimgrey;
 }
   
 .gsc-comments > .gsc-timeline { 
    order: 3; 
-} 
-  
-.gsc-homepage-bg { 
-   background-color: #1c1c1c; 
 } 
   
 main .gsc-loading-image { 
