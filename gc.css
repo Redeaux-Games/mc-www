@@ -30,7 +30,7 @@ main {
    --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68; 
    --color-prettylights-syntax-constant-other-reference-link: #96d0ff; 
    --color-btn-text: #adbac7; 
-   --color-btn-bg: #373e47; 
+   --color-btn-bg: #3a3a3a; 
    --color-btn-border: rgb(205 217 229 / 10%); 
    --color-btn-shadow: 0 0 transparent; 
    --color-btn-inset-shadow: 0 0 transparent; 
@@ -58,7 +58,7 @@ main {
    --color-canvas-overlay: #161b22; 
    --color-canvas-inset: rgb(21 32 43 / 100%); 
    --color-canvas-subtle: rgb(37 51 65); 
-   --color-border-default: #444c56; 
+   --color-border-default: #696969; 
    --color-border-muted: #373e47; 
    --color-neutral-muted: rgb(99 110 123 / 40%); 
    --color-accent-fg: #539bf5; 
@@ -76,8 +76,6 @@ main {
    --color-primer-shadow-focus: 0 0 0 3px #143d79; 
    --color-scale-gray-7: #373e47; 
    --color-scale-blue-8: #143d79; 
-  
-   /*! Extensions from @primer/css/alerts/flash.scss */ 
    --color-social-reaction-bg-hover: var(--color-scale-gray-7); 
    --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8); 
  } 
@@ -85,8 +83,7 @@ main {
  main .pagination-loader-container { 
    background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg"); 
  } 
-  
- /*! Custom CSS */ 
+ 
 .gsc-main {
     width: 100%;
     padding-left: 5em;
