@@ -87,7 +87,9 @@ main {
  } 
   
  /*! Custom CSS */ 
-  
+.em-color-text-secondary.text-sm {
+   display: none;
+}
  .gsc-reactions-count { 
    display: none; 
  } 
