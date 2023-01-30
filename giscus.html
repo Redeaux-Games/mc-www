@@ -4,32 +4,27 @@
 <title>Test | ⱮȰȴŦȆȠĊĦĄĬƝ</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<link id="giscus-theme" rel="stylesheet" crossorigin="anonymous" href="https://moltencha.in/gc.css">
 <style>
 body {
    background-color: #1a1a1a;
-   color: #fcfcfc;
+
 }
 
 .main-a {
    width: 100%;
 }
    
-.gsc-main {
-    padding-left: 10em !important;
-    padding-right: 10em !important;
+h6 {
+   color: #fcfcfc;
 }
-
-.text-sm {
-    display: none !important;
-}
-</style>
+</style> 
 </head>
 <body>
 <h6>Testing</h6>
 <br>
 <br>
-<div class="main-a"><script src="https://giscus.app/client.js"
+<div class="main-a">
+<script src="https://giscus.app/client.js"
         data-repo="Redeaux-Games/mc-www"
         data-repo-id="R_kgDOIsKT6Q"
         data-category="Announcements"
@@ -44,6 +39,19 @@ body {
         data-loading="lazy"
         crossorigin="anonymous"
         async>
-</script></div>
+sendMessage({
+  setConfig: {
+    theme: 'https://moltencha.in/gc.css',
+    reactionsEnabled: true,
+  }
+});
+
+if ('discussion' in giscusData) {
+  const metadataMessage: IMetadataMessage = giscusData;
+  console.log(metadataMessage.discussion);
+  console.log(metadataMessage.viewer);
+}
+</script>
+</div>
 </body>
 </html>
