@@ -87,5 +87,42 @@ main .pagination-loader-container {
 }
 
 main .gsc-loading-image {
-  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  background-image: url("https://moltencha.in/images/loader.gif");
+}
+
+.gsc-main {
+    width: 100%;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.text-sm {
+    display: none !important;
+}
+
+.mb-4 {
+    margin-bottom: 0rem;
+}
+
+.btn-primary {
+    background-color: var(--color-btn-primary-bg);
+    border-color: var(--color-btn-primary-border);
+    box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
+    color: var(--color-btn-primary-text);
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-btn-primary-hover-bg);
+    border-color: var(--color-btn-primary-hover-border);
+    box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
+    color: var(--color-btn-primary-text);
+    text-transform: uppercase;
+}
+
+.btn-primary:disabled {
+    background-color: rgb(0 0 0 / 60%);
+    border-color: var(--color-btn-primary-disabled-border);
+    color: var(--color-btn-primary-disabled-text);
+    text-transform: uppercase;
 }
