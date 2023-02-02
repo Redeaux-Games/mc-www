@@ -21,5 +21,5 @@ window.onscroll = event => {
       }
       
       iteration += 1 / 3;
-    }, 50);
+    }, 40);
 }; 
