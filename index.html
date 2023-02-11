@@ -88,7 +88,13 @@
             }
        </style>
     </head>
-    <body class="appear-animate bg-dark">       
+    <body class="appear-animate bg-dark">   
+        <div id="modal" style="display: none;">
+           <div class="modal-content scroll">
+              <span class="close-button">&times;</span>
+              <div id="modal-content"></div>
+           </div>
+        </div>
         <div class="page-loader bg-dark">
             <div class="loader rt-1">Loading...</div>
         </div>
@@ -118,12 +124,6 @@
                 </div>
             </nav>
             <main id="main">
-                <div id="modal" style="display: none;">
-                  <div class="modal-content scroll">
-                    <span class="close-button">&times;</span>
-                    <div id="modal-content"></div>
-                  </div>
-                </div>
                 <section class="home-section bg-dark" data-background="video/video.jpg" id="home" onScroll="ChangeUrl('Home', '/');">
                     <script type="application/ld+json">
                         {
