@@ -1036,7 +1036,6 @@ a.btn-mod:focus{
     top: 0px;
     left: 0px;
     background-color: #cd27273b;
-    backdrop-filter: saturate(15);
 }
 .bg-video-wrapper video{
     max-width: inherit;
