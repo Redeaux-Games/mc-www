@@ -6705,3 +6705,49 @@ section:hover .small-item-carousel .owl-next{
   .crt-widget.crt-widget-branded .crt-logo {
     display: none !important;
   }
+
+*/ Modal */
+
+            #modal {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(0, 0, 0, 0);
+              backdrop-filter: blur(15px);
+              z-index: 9999;
+            }
+
+            .modal-content {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: rgba(0, 0, 0, 0.678);
+              padding: 1rem;
+              box-shadow: 0px 0px 10px #b90000;
+              border-radius: 1em;
+            }
+
+            .close-button {
+              position: absolute;
+              top: 1px;
+              right: 1.5rem;
+              cursor: pointer;
+              font-size: 3.5rem;
+              color: blueviolet;
+              transition: 500ms;
+            }
+
+            .close-button:hover {
+              cursor: pointer;
+              color:rgb(226, 223, 43);
+            }
+
+            .scroll {
+              max-height: 95%;
+              max-width: 95%;
+              overflow-y: auto;
+              overflow-x: hidden;
+            }
