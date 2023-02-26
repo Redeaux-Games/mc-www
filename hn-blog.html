@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/timeline.css">
+    <title>MoltenChain Blog Test</title>
+    <style>
+#blog-posts-widget {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#blog-posts-widget h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#blog-posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#blog-posts-list li {
+  margin-bottom: 10px;
+}
+
+#blog-posts-list li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+</style>
+<script type="text/javascript">
+const blogPostsUrl = 'https://api.hashnode.com/v1/graphql';
+const blogPostsQuery = `
+  query {
+    user(username: "magma") {
+      publication {
+        posts(page: 0) {
+          title
+          brief
+          slug
+        }
+      }
+    }
+  }
+`;
+
+fetch(blogPostsUrl, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': '72b1ad86-90f6-440e-9adb-66e9bbac85fa',
+  },
+  body: JSON.stringify({
+    query: blogPostsQuery,
+  }),
+})
+  .then(response => response.json())
+  .then(data => {
+    const posts = data.data.user.publication.posts;
+    const blogPostsList = document.getElementById('blog-posts-list');
+    posts.forEach(post => {
+      const postLink = `https://blog.magm.red/${post.slug}`;
+      const postTitle = post.title;
+      const postBrief = post.brief;
+      const listItem = `
+        <li>
+          <a href="${postLink}" target="_blank">${postTitle}</a>
+          <p>${postBrief}</p>
+        </li>
+      `;
+      blogPostsList.innerHTML += listItem;
+    });
+  })
+  .catch(error => console.error(error));
+</script>
+</head>
+<body>
+<div class="container">
+        <div id="blog-posts-widget">
+           <h2>Recent Blog Posts</h2>
+           <ul id="blog-posts-list"></ul>
+        </div>
+</div>
+</body>
+</html>
